@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+	<!--link to reset css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!--link to style.css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- link to jquery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<!--link to js-->	
+	<script type="text/javascript" src="assets/javascript/game.js"></script>  
+  
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="container">
+
+		<div class="panel panel-default">
+
+			<div class="panel-heading">
+				<h1>Crystal Collector</h1>
+			</div>
+		</div>
+	</div>	
+
+
+	<div class="container">	
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h2>Instructions</h2>
+			</div>	
+			<div class="panel-body">
+		
+				You will be given a random number at the start of the game.
+				<br><br>
+
+				There are four crystals below.  By clicking on a crystal you will add a specific 
+				amount of points to your total score.
+				<br><br>
+
+				You win the game by matching your total score to the random number.  You lose the game if 
+				your total score goes above the random number.
+				<br><br>
+
+				The value of each crystal is hidden until you click on it.
+				<br><br>
+
+				Each time the game starts- the value of the crystals will be reset.
+	
+			</div>
+		</div>	
+	</div>
+	<div class="container">			
+		<div class="panel panel-default" id="boxes">	
+			<div class="panel-body">
+				<img src="assets/images/blue.png" id="blue">
+				<img src="assets/images/red.png" id="red">
+		 		<img src="assets/images/green.png" id="green">
+		 		<img src="assets/images/yellow.png" id="yellow">
+			</div>
+		</div>	
+
+		<div class="panel panel-default" id="boxes">
+
+			<div class="panel-body">
+
+				<h4>Total Score: <span id="totalScore"></h4>
+			
+			</div>
+		</div>
+		<div class="panel panel-default" id="boxes">
+
+			<div class="panel-body">
+			
+				<h4>Number to Match: <span id="numToMatch"></span></h4>
+
+			</div>
+
+		</div>
+		<div class="panel panel-default" id="boxes">
+			<div class="panel-body">
+				<h4>
+					Wins:<span id="numWins"></span>
+					<br>
+					Losses:<span id="numLosses"></span>
+				</h4>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!--
+<script type="text/javascript">
+
+
+</script>-->
+</body>
+</html>
